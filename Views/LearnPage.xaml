@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.LearnPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" Text="Таблиця матеріалів" HorizontalOptions="Center" FontSize="Large" />
+        <ListView x:Name="lessonsView" 
+                ItemsSource="{Binding lessonsList}"
+                  HasUnevenRows="True"
+                  SeparatorColor="Black">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label TextColor="Black" 
+                                       Text="{Binding Name}" 
+                                       FontSize="18"
+                                       VerticalOptions="Center"
+                                       Margin="20"
+                                       FontFamily="Arial"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+            <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+            <Button FontFamily="Arial"
+                    BackgroundColor="White" 
+                    CornerRadius="30"
+                    TextColor="Black" 
+                    Text="Вивчати" 
+                    HorizontalOptions="Center" 
+                    FontSize="30" 
+                    HeightRequest="100"
+                    WidthRequest="170"
+                    x:Name="OpenLessonButton" 
+                    Clicked="OpenLessonButton_Clicked"
+                    BorderColor="Black"
+                    BorderWidth="5"
+                    Margin="10"
+                    VerticalOptions="Center">
+            </Button>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.TestPages.FirstTestPage">
+    <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="ІР-адресація" 
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout x:Name="FirstQuestion">
+                    <Label Text="Мережа 192.168.8.0/20 поділяється на підмережі, в яких 200, 25, 15, та 5 вузлів в кожній. Яка маска підмережі, що буде відповідати мережі з кількістю вузлів 5"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFirstButton"
+                                Clicked="FirstQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/27"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestSecondButton"
+                                Clicked="FirstQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/28"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestThirdButton"
+                                Clicked="FirstQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/29"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFourthButton"
+                                Clicked="FirstQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/30"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SecondQuestion">
+                    <Label Text="Мережа 192.168.8.0/20 поділяється на підмережі, в яких 200, 25, 15, та 5 вузлів в кожній. Яка IP-адреса підмережі, що буде відповідати мережі з кількістю вузлів 200"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFirstButton"
+                                Clicked="SecondQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="192.168.8.1"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestSecondButton"
+                                Clicked="SecondQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="192.168.8.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestThirdButton"
+                                Clicked="SecondQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="192.168.9.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFourthButton"
+                                Clicked="SecondQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="192.168.9.1"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="ThirthQuestion">
+                    <Label Text="Мережа 192.168.8.0/20 поділяється на підмережі, в яких 200, 25, 15, та 5 вузлів в кожній. Яка маска підмережі, що буде відповідати мережі з кількістю вузлів 15"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFirstButton"
+                                Clicked="ThirdQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/27"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestSecondButton"
+                                Clicked="ThirdQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/28"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestThirdButton"
+                                Clicked="ThirdQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/29"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFourthButton"
+                                Clicked="ThirdQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/30"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FourthQuestion">
+                    <Label Text="Мережа 192.168.8.0/20 поділяється на підмережі, в яких 200, 25, 15, та 5 вузлів в кожній. Яка маска підмережі, що буде відповідати мережі з кількістю вузлів 200"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFirstButton"
+                                Clicked="FourthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="255.255.248.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestSecondButton"
+                                Clicked="FourthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="255.255.240.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestThirdButton"
+                                Clicked="FourthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="255.255.255.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFourthButton"
+                                Clicked="FourthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="255.255.252.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FifthQuestion">
+                    <Label Text="Яка кількість вузлів у підмережі з маскою 25"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFirstButton"
+                                Clicked="FifthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="30"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestSecondButton"
+                                Clicked="FifthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="62"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestThirdButton"
+                                Clicked="FifthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="126"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFourthButton"
+                                Clicked="FifthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="252"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SixthQuestion">
+                    <Label Text="Виберіть можливий правильний формат маски підмережі 255.255.240.0"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFirstButton"
+                                Clicked="SixthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="11111111.11111111.11111000.00000000"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestSecondButton"
+                                Clicked="SixthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/21"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestThirdButton"
+                                Clicked="SixthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="/22"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFourthButton"
+                                Clicked="SixthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="11111111.11111111.00000000.00000000"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SeventhQuestion">
+                    <Label Text="Яка максимальна кількість вузлів мережі, якщо ЇЇ маска /27"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFirstButton"
+                                Clicked="SeventhQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="30"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestSecondButton"
+                                Clicked="SeventhQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="62"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestThirdButton"
+                                Clicked="SeventhQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="6"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFourthButton"
+                                Clicked="SeventhQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="14"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="EighthQuestion">
+                    <Label Text="Якільки підмереж юуде створено, якщо оригінальна маска 255.255.192.0, а нова 255.255.255.192"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFirstButton"
+                                Clicked="EighthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="128"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestSecondButton"
+                                Clicked="EighthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="256"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestThirdButton"
+                                Clicked="EighthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="64"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFourthButton"
+                                Clicked="EighthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="32"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="NinthQuestion">
+                    <Label Text="Скільки підмереж буде створено, якщо оригінальна маска 255.255.128.0, а нова 255.255.192.0"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFirstButton"
+                                Clicked="NinthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="64"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestSecondButton"
+                                Clicked="NinthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="2"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestThirdButton"
+                                Clicked="NinthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="4"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFourthButton"
+                                Clicked="NinthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="16"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="TenthQuestion">
+                    <Label Text="Яка максимальна кількість вузлів мережі, якщо її маска /28"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFirstButton"
+                                Clicked="TenthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="14"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestSecondButton"
+                                Clicked="TenthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="16"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestThirdButton"
+                                Clicked="TenthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="8"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFourthButton"
+                                Clicked="TenthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="4"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Закінчити тест"
+                            TextColor="Black"
+                            BackgroundColor="White"
+                            WidthRequest="250"
+                            HeightRequest="100"
+                            FontSize="30"
+                            BorderColor="Black"
+                            BorderWidth="5"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            CornerRadius="15"
+                            Margin="10"
+                            x:Name="finishTestButton"
+                            Clicked="finishTestButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

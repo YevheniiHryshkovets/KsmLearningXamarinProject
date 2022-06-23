@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.TestPages.FourthTestPage">
+    <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Взаємодія між мережами" 
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout x:Name="FirstQuestion">
+                    <Label Text="Який параметр використовує маршрутизатор, щоб вибрати шлях до місця призначення, якщо доступно кілька маршрутів?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFirstButton"
+                                Clicked="FirstQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="нижче значення показника, пов'язане з цільовою мережею"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestSecondButton"
+                                Clicked="FirstQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="нижню IP-адресу шлюзу, щоб дістатися до цільової мережі"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestThirdButton"
+                                Clicked="FirstQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="вище значення показника, пов'язане з цільовою мережею"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFourthButton"
+                                Clicked="FirstQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="вища IP-адреса шлюзу, щоб дістатися до цільової мережі"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SecondQuestion">
+                    <Label Text="Яка основна характеристика протоколу IP?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFirstButton"
+                                Clicked="SecondQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="без з'єднання"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestSecondButton"
+                                Clicked="SecondQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="залежний від медіа"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestThirdButton"
+                                Clicked="SecondQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="сегментація даних користувачів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFourthButton"
+                                Clicked="SecondQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="надійна доставка від кінця до кінця"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="ThirthQuestion">
+                    <Label Text="Яке поле в заголовку IPv4 використовується для запобігання нескінченному проходженню пакетів мережею?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFirstButton"
+                                Clicked="ThirdQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Час жити"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestSecondButton"
+                                Clicked="ThirdQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Порядковий номер"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestThirdButton"
+                                Clicked="ThirdQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Номер підтвердження"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFourthButton"
+                                Clicked="ThirdQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Диференційовані послуги"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FourthQuestion">
+                    <Label Text="Яку перевагу пропонує спрощений заголовок IPv6 перед IPv4?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFirstButton"
+                                Clicked="FourthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="заголовок меншого розміру"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestSecondButton"
+                                Clicked="FourthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="невелика вимога для обробки контрольних сум"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestThirdButton"
+                                Clicked="FourthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="менші IP-адреси джерела та призначення"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFourthButton"
+                                Clicked="FourthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ефективна обробка пакетів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FifthQuestion">
+                    <Label Text="Яке поле заголовка IPv4 ідентифікує протокол верхнього рівня, що міститься в пакеті?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFirstButton"
+                                Clicked="FifthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Протокол"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestSecondButton"
+                                Clicked="FifthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Ідентифікація"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestThirdButton"
+                                Clicked="FifthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Версія"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFourthButton"
+                                Clicked="FifthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Диференційовані послуги"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SixthQuestion">
+                    <Label Text="Який запис таблиці маршрутизації має адресу наступного переходу, пов'язану з мережею призначення?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFirstButton"
+                                Clicked="SixthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="напряму зв'язані маршрути"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestSecondButton"
+                                Clicked="SixthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="місцеві маршрути"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestThirdButton"
+                                Clicked="SixthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="віддалені маршрути"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFourthButton"
+                                Clicked="SixthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="C і L вихідні маршрути"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SeventhQuestion">
+                    <Label Text="Яке твердження описує функцію протоколу розпізнавання адрес?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFirstButton"
+                                Clicked="SeventhQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ARP використовується для виявлення IP-адреси будь-якого хоста в іншій мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestSecondButton"
+                                Clicked="SeventhQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ARP використовується для виявлення IP-адреси будь-якого хоста в локальній мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestThirdButton"
+                                Clicked="SeventhQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ARP використовується для виявлення MAC-адреси будь-якого хоста в іншій мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFourthButton"
+                                Clicked="SeventhQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ARP використовується для виявлення MAC-адреси будь-якого хоста в локальній мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="EighthQuestion">
+                    <Label Text="Який оператор описує обробку запитів ARP за локальним посиланням?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFirstButton"
+                                Clicked="EighthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Їх повинні пересилати всі маршрутизатори в локальній мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestSecondButton"
+                                Clicked="EighthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Вони приймаються та обробляються кожним пристроєм у локальній мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestThirdButton"
+                                Clicked="EighthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Їх скидають усі комутатори локальної мережі."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFourthButton"
+                                Clicked="EighthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Їх приймає та обробляє тільки цільовий пристрій."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="NinthQuestion">
+                    <Label Text="Яка адреса призначення використовується у кадрі запиту ARP?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFirstButton"
+                                Clicked="NinthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="0.0.0.0"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestSecondButton"
+                                Clicked="NinthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="255.255.255.255"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestThirdButton"
+                                Clicked="NinthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="FFFF.FFFF.FFFF"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFourthButton"
+                                Clicked="NinthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="АААА.ААААА.АААА"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="TenthQuestion">
+                    <Label Text="Маршрутизатор завантажується і переходить в режим налаштування. Яка причина цього?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFirstButton"
+                                Clicked="TenthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Образ IOS пошкоджений."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestSecondButton"
+                                Clicked="TenthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Cisco IOS відсутня у флеш-пам'яті."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestThirdButton"
+                                Clicked="TenthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Файл конфігурації відсутній у NVRAM."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFourthButton"
+                                Clicked="TenthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Процес POST виявив збій обладнання"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Закінчити тест"
+                            TextColor="Black"
+                            BackgroundColor="White"
+                            WidthRequest="250"
+                            HeightRequest="100"
+                            FontSize="30"
+                            BorderColor="Black"
+                            BorderWidth="5"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            CornerRadius="15"
+                            Margin="10"
+                            x:Name="finishTestButton"
+                            Clicked="finishTestButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

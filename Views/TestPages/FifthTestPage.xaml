@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.TestPages.FifthTestPage">
+    <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Взаємодія мережних застосунків" 
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout x:Name="FirstQuestion">
+                    <Label Text="ПК завантажує великий файл із сервера. Вікно TCP становить 1000 байт. Сервер надсилає файл за допомогою 100-байтових сегментів. Скільки сегментів передасть сервер, перш ніж йому буде потрібно підтвердження від ПК?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFirstButton"
+                                Clicked="FirstQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="1 сегмент"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestSecondButton"
+                                Clicked="FirstQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="10 сегментів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestThirdButton"
+                                Clicked="FirstQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="100 сегментів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FirstQuestFourthButton"
+                                Clicked="FirstQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="1000 сегментів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SecondQuestion">
+                    <Label Text="Який фактор визначає розмір вікна TCP?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFirstButton"
+                                Clicked="SecondQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="кількість даних, що підлягають передачі"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestSecondButton"
+                                Clicked="SecondQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="кількість послуг, що входять в сегмент TCP"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestThirdButton"
+                                Clicked="SecondQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="кількість даних, яку місце призначення може обробити за один раз"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SecondQuestFourthButton"
+                                Clicked="SecondQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="кількість даних, яку джерело здатне надіслати за один раз"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="ThirthQuestion">
+                    <Label Text="Що робить клієнт, коли має надіслати дейтаграми UDP?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFirstButton"
+                                Clicked="ThirdQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Він просто надсилає дейтаграми."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestSecondButton"
+                                Clicked="ThirdQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Він запитує сервер, щоб перевірити, чи готовий він отримати дані."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestThirdButton"
+                                Clicked="ThirdQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Він надсилає серверу спрощене тристороннє рукостискання."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="ThirdQuestFourthButton"
+                                Clicked="ThirdQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Він надсилає на сервер сегмент із встановленим прапорцем SYN для синхронізації розмови."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FourthQuestion">
+                    <Label Text="Яка інформація використовується TCP для повторної збірки та зміни порядку отриманих сегментів?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFirstButton"
+                                Clicked="FourthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="номери портів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestSecondButton"
+                                Clicked="FourthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="порядкові номери"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestThirdButton"
+                                Clicked="FourthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="номери підтверджень"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FourthQuestFourthButton"
+                                Clicked="FourthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="номери фрагментів"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="FifthQuestion">
+                    <Label Text="Який прапор у заголовку TCP використовується у відповідь на отриманий FIN для припинення з'єднання між двома мережевими пристроями?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFirstButton"
+                                Clicked="FifthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="FIN"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestSecondButton"
+                                Clicked="FifthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="ACK"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestThirdButton"
+                                Clicked="FifthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="SYN"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="FifthQuestFourthButton"
+                                Clicked="FifthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="RST"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SixthQuestion">
+                    <Label Text="Який протокол або служба використовує UDP для зв'язку клієнт-сервер і TCP для зв'язку між сервером?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFirstButton"
+                                Clicked="SixthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="HTTP"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestSecondButton"
+                                Clicked="SixthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="FTP"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestThirdButton"
+                                Clicked="SixthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="DNS"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SixthQuestFourthButton"
+                                Clicked="SixthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="SMTP"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="SeventhQuestion">
+                    <Label Text="Яка характеристика UDP?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFirstButton"
+                                Clicked="SeventhQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Датаграми UDP проходять той самий шлях і надходять у правильному порядку до місця призначення.​"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestSecondButton"
+                                Clicked="SeventhQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="Програми, які використовують UDP, завжди вважаються ненадійними.​"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestThirdButton"
+                                Clicked="SeventhQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="UDP повторно збирає отримані дейтаграми в порядку їх отримання."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="SeventhQuestFourthButton"
+                                Clicked="SeventhQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="UDP передає дані в мережу лише тоді, коли місце призначення готове отримати дані."
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="EighthQuestion">
+                    <Label Text="Який тип порту потрібно запитувати в IANA, щоб використовувати його з конкретною програмою?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFirstButton"
+                                Clicked="EighthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="зареєстрований порт"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestSecondButton"
+                                Clicked="EighthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="приватний порт"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestThirdButton"
+                                Clicked="EighthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="динамічний порт"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="EighthQuestFourthButton"
+                                Clicked="EighthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="вихідний порт"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="NinthQuestion">
+                    <Label Text="Яке поле в заголовку TCP вказує на статус процесу тристороннього рукостискання?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFirstButton"
+                                Clicked="NinthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="вікно"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestSecondButton"
+                                Clicked="NinthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="зарезервований"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestThirdButton"
+                                Clicked="NinthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="контрольна сума"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="NinthQuestFourthButton"
+                                Clicked="NinthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="контрольні біти"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout x:Name="TenthQuestion">
+                    <Label Text="Чому HTTP використовує TCP як протокол транспортного рівня?"
+                               TextColor="Black"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                           Margin="18,0,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFirstButton"
+                                Clicked="TenthQuestFirstButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="щоб забезпечити найшвидшу швидкість завантаження"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestSecondButton"
+                                Clicked="TenthQuestSecondButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="тому що HTTP є найкращим протоколом"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestThirdButton"
+                                Clicked="TenthQuestThirdButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="тому що помилки передачі легко переносяться"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Margin="10,0,0,0"
+                                ImageSource="AnswerClick.png"
+                                HeightRequest="48"
+                                WidthRequest="48"
+                                CornerRadius="25"
+                                BackgroundColor="White"
+                                x:Name="TenthQuestFourthButton"
+                                Clicked="TenthQuestFourthButton_Clicked"/>
+                        <Label TextColor="Black" 
+                               Text="оскільки HTTP вимагає надійної доставки"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Button Text="Закінчити тест"
+                            TextColor="Black"
+                            BackgroundColor="White"
+                            WidthRequest="250"
+                            HeightRequest="100"
+                            FontSize="30"
+                            BorderColor="Black"
+                            BorderWidth="5"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            CornerRadius="15"
+                            Margin="10"
+                            x:Name="finishTestButton"
+                            Clicked="finishTestButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

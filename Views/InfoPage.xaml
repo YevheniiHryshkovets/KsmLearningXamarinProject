@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPage">
+    <StackLayout BackgroundColor="White">
+        <StackLayout>
+            <Label BackgroundColor="White"
+                   TextColor="Black"
+                   Text="Домашня"
+                   FontSize="35"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="0,50,0,50"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Вкажіть ваше ім'я"
+                   FontSize="20"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="userName"
+                   FontSize="15"
+                   BackgroundColor="AliceBlue"
+                   TextColor="Black"
+                   HorizontalOptions="FillAndExpand"/>
+            <Label Text="Вкажіть группу"
+                   FontSize="20"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="groupName"
+                   FontSize="15"
+                   BackgroundColor="AliceBlue"
+                   TextColor="Black"
+                   HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Таблиця результатів" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center">
+            <ListView x:Name="AnswerList" ItemsSource="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                                    <Label Text="{Binding studentName}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="{Binding testName}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="{Binding result}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="бали" FontSize="Medium" TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+            <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

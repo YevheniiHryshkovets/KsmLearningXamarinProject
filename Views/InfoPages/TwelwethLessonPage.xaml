@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPages.TwelwethLessonPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" FontSize="25" Text="Рівень застосування"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Label TextColor="Black" FontSize="18" Text="     Протоколи прикладного рівня використовуються для обміну даними між програмами, запущеними на пристроях відправника й отримувача. До найбільш відомих протоколів прикладного рівня належать протокол передавання гіпертексту (HTTP), протокол передавання файлів (FTP), простий протокол передавання файлів (TFTP), протокол доступу до інтернет-повідомлень (IMAP) і протокол системи доменних імен (DNS)."/>
+                <Image Source="LastLevel.png"/>
+
+                <Label TextColor="Black" FontSize="18" Text=" Рівень подання даних виконує три основні функції:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - форматування або перетворення даних на боці джерела у формат, сумісний для сприйняття пристроєм призначення;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - ущільнення даних у спосіб, придатний для розпакування пристроєм призначення;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - шифрування даних для передавання і розшифрування даних при отриманні;"/>
+                <Image Source="LastLevelSecond.png"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Функції на сеансовому рівні створюють і підтримують діалоги між програмами джерела і призначення. Сеансовий рівень виконує обмін інформацією для ініціювання діалогів, підтримки їх активного стану та перезапуску сеансів, які перериваються або простоюють протягом тривалого періоду часу."/>
+                <Label TextColor="Black" FontSize="18" Text="     DNS - Domain Name System (or Service) перетворює доменні імена, такі як cisco.com, на IP-адреси."/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Налаштування вузла BOOTP - Bootstrap Protocol - Дозволяє бездисковій робочій станції отримати власну IP-адресу, IP-адресу BOOTP-сервера в мережі та файл, який буде завантажений в пам'ять для завантаження ОС."/>
+                <Label TextColor="Black" FontSize="18" Text="     DHCP - Dynamic Host Configuration Protocol динамічно призначає IP-адреси для повторного використання"/>
+                <Label TextColor="Black" FontSize="18" Text="     SMTP - Simple Mail Transfer Protocol дозволяє клієнтам надсилати електронні листи на поштовий сервер та дозволяє серверам перенаправляти електронну пошту на інші сервери"/>
+                <Label TextColor="Black" FontSize="18" Text="     POP3 - Post Office Protocol дозволяє клієнтам отримувати електронну пошту з поштового сервера та завантажує електронну пошту до локальної поштової програми клієнта"/>
+                <Label TextColor="Black" FontSize="18" Text="     IMAP - Internet Message Access Protocol дозволяє клієнтам отримувати доступ до електронної пошти, що зберігається на поштовому сервері підтримує електронну пошту на сервері"/>
+                <Label TextColor="Black" FontSize="18" Text="     FTP - File Transfer Protocol встановлює правила, які дозволяють користувачу одного вузла мати доступ та обмінюватися файлами з іншими вузлами по мережі"/>
+                <Label TextColor="Black" FontSize="18" Text="     FTP - надійний, орієнтований на з'єднання протокол гарантованої доставки файлів"/>
+                <Label TextColor="Black" FontSize="18" Text="     TFTP - Trivial File Transfer Protocol простий протокол передавання файлів без налаштування з'єднання, що докладає найкращими зусиль, проте не гарантує доставки"/>
+                <Label TextColor="Black" FontSize="18" Text="     У порівнянні з FTP вносить менше накладних витрат"/>
+                <Label TextColor="Black" FontSize="18" Text="     HTTP - Hypertext Transfer Protocol - це набір правил для обміну текстом, графічними зображеннями, аудіо, відео та іншими мультимедійними файлами у всесвітній павутині."/>
+                <Label TextColor="Black" FontSize="18" Text="     При використанні HTTPS - HTTP Secure браузер використовує шифрування для захисту HTTP-комунікацій та автентифікує веб-сайт, до якого ви під'єднуєтесь"/>
+                <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+                    <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

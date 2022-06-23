@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPages.FirstLessonPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" Text="Методи інтернет підключення"
+               FontSize="25"/>
+        <ScrollView HeightRequest="2000">
+            <StackLayout BackgroundColor="White">
+                <Label TextColor="Black" FontSize="18" Text="    Кабельне підключення – зазвичай пропонують постачальники послуг кабельного телебачення. Дані передаються по тому ж кабелю, що використовується для передачі сигналів кабельного телебачення. Цей спосіб забезпечує підключення до Інтернету з високою пропускною здатністю і постійним доступом до мережі."/>
+                <Label TextColor="Black" FontSize="18" Text="    DSL – цифрова абонентська лінія забезпечує підключення до Інтернету з високою пропускною здатністю і постійним доступом до мережі. DSL використовує телефонні лінії зв'язку. Зазвичай невеликі й домашні офіси використовують асиметричні лінії DSL (ADSL), в яких дані користувачу передаються з більшою швидкістю, ніж від користувача."/>
+                <Label TextColor="Black" FontSize="18" Text="    Стільникова мережа – для доступу в Інтернет використовується мобільна телефонна мережа. В будь-якій точці, де доступний сигнал стільникової мережі, можна отримати доступ  в Інтернет. Продуктивність буде обмежена можливостями телефону або базової станції, до якої він підключений."/>
+                <Label TextColor="Black" FontSize="18" Text="    Супутниковий зв'язок – супутникові інтернет-канали можна використовувати в районах, де відсутні інші способи підключення. Для використання супутникових антен необхідно, щоб супутник знаходився в зоні прямої видимості."/>
+                <Label TextColor="Black" FontSize="18" Text="    Телефонний комутуючий доступ – економний варіант підключення з використанням будь-якої телефонної лінії і модема. Низька пропускна здатність комутуючої лінії зазвичай недостатня для передачі великого об'єму даних."/>
+                <Label TextColor="Black" FontSize="18" Text="    Виділена орендована лінія – орендовані лінії представляють собою зарезервовані канали в мережі оператора зв'язку, що забезпечують зв'язок між географічно віддаленими офісами для передачі голосу й даних в приватній мережі."/>
+                <Label TextColor="Black" FontSize="18" Text="    Глобальна мережа Ethernet – глобальні мережі Ethernet дозволяють розширити мережі LAN до WAN."/>
+                <Label TextColor="Black" FontSize="18" Text="    DSL - корпоративне DSL-підключення доступне в різних форматах. Популярністю користуються симетричні цифрові абонентські лінії (Symmetric Digital Subscriber Lines, SDSL), аналогічні абонентській версії DSL, але забезпечують однакову швидкість при отриманні і відправленні даних."/>
+                <Label TextColor="Black" FontSize="18" Text="    Супутниковий зв'язок – супутникові послуги забезпечують підключення там, де проводовий зв'язок недоступний."/>
+                <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+                    <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

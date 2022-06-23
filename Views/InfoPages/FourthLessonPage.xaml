@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPages.FourthLessonPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" FontSize="25" Text="Структуризація мереж"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Label TextColor="Black" FontSize="18" Text="     Тема фізичної та логічної структуризації мереж є невід'ємною частиною вивчення курсу «Комп'ютерні мережі та системи» і є важливою для майбутніх фахівців даної галузі."/>
+                <Label TextColor="Black" FontSize="18" Text="     Топологія мережі – це спосіб опису конфігурації мережі, схема розміщення та з'єднання мережевих пристроїв. Топології поділяються на два типи: повнозв'язні та неповнозв'язні"/>
+                <Label TextColor="Black" FontSize="18" Text="     Повнозв'язна топологія відповідає конфігурації мережі, в якій  кожен комп'ютер безпосередньо підключений до всіх інших."/>
+                <Image Source="FullTopologie.png"/>
+                <Label TextColor="Black" FontSize="18" Text="Переваги:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - гарантія мінімальної затримки при передачі;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - висока надійність;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - максимальна відмовостійкість у роботі мережі."/>
+                <Label TextColor="Black" FontSize="18" Text="Недоліки:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - значна  частина зв'язків буде більше часу простоювати;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - висока вартість;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - ускладнюється налаштування мережевого обладнання;"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Топологія «Зірка» організовується за допомогою центрального (мережевого) пристрою, до якого підключаються всі абоненти мережі"/>
+                <Image Source="StarTopologie.png"/>
+                <Label TextColor="Black" FontSize="18" Text="Пререваги:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - легкість обслуговування та усунення несправностей;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - захищеність;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - при передачі інформації лише один транзитний вузол;"/>
+                <Label TextColor="Black" FontSize="18" Text="Недоліки:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - висока вартість мережевого обладнання;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - можливість нарощування вузлів мережі обмежується кількістю портів мережевого обладнання;"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Топологія «Кільце» передбачає передачу даних по колу від одного комп'ютера до іншого."/>
+                <Image Source="CircleTopologie.png"/>
+                <Label TextColor="Black" FontSize="18" Text="Переваги:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - відсутність накладання пакетів один на одного;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - можливість забезпечення резервування зв'язків, що покращує надійність мережі;"/>
+                <Label TextColor="Black" FontSize="18" Text="Недоліки:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - дані циркулюють регулярно по колу;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - час передачі збільшується прямо пропорційно кількості клієнтів;"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     В топології «Шина» всі вузли з'єднуються між собою  одним кабелем."/>
+                <Image Source="LineTopologie.png"/>
+                <Label TextColor="Black" FontSize="18" Text="Переваги:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - дешевизна;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - простота підключення нових абонентів;"/>
+                <Label TextColor="Black" FontSize="18" Text="Недоліки:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - низька надійність;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - невисока продуктивність; "/>
+                <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+                    <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

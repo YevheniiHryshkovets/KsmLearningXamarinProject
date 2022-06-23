@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <StackLayout BackgroundColor="White" Orientation="Vertical" HeightRequest="100">
+            <Label
+                Margin="33" 
+                HeightRequest="100" 
+                Text="Your Network" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End" 
+                FontSize="30" 
+                TextColor="Black"/>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="White">
+            <StackLayout
+                HeightRequest="250"
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+
+                <StackLayout VerticalOptions="Center"
+                             HeightRequest="150"
+                             WidthRequest="150"
+                             Orientation="Vertical"
+                             BackgroundColor="White">
+                    <Button x:Name="LearningButton"
+                            ImageSource="BigBook.png"
+                            Clicked="LearningButton_Clicked"
+                            HeightRequest="105"
+                            WidthRequest="105"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            BackgroundColor="White"
+                            CornerRadius="20"/>
+                    <Label VerticalOptions="Center"
+                           Text="Навчання"
+                           FontSize="27"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           BackgroundColor="White"/>
+                </StackLayout>
+
+                <StackLayout HeightRequest="150"
+                             WidthRequest="150"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             BackgroundColor="White">
+                    <Button x:Name="TestsButton"
+                            Clicked="TestsButton_Clicked"
+                            BackgroundColor="White"
+                            ImageSource="BigChekBox.png"
+                            HeightRequest="105"
+                            WidthRequest="105"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            CornerRadius="20"/>
+
+                    <Label Text="Тестування"
+                           VerticalOptions="Center"
+                           FontSize="27"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           BackgroundColor="White"/>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="white" HeightRequest="250">
+            <Button x:Name="Info"
+                    BackgroundColor="white"
+                    ImageSource="BigHome.png"
+                    Clicked="InfoButton_Clicked"
+                    Margin="0,30,0,0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="125"
+                    WidthRequest="125"
+                    CornerRadius="15"/>
+
+            <Label Text="Домашня"
+                   FontSize="27"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   BackgroundColor="white"/>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPages.EleventhLessonPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" FontSize="25" Text="IPv.6 адресація"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Label TextColor="Black" FontSize="18" Text="     IPv6-адреси і МАС-адреси представлені за допомогою шістнадцяткової системи числення з основою 16. Шістнадцяткова система числення використовує цифри від 0 до 9 і літери від A до F. MAC-адреса складається з 48-розрядного двійкового числа. Шістнадцяткова система числення використовується для запису МАС-адрес, оскільки одна шістнадцяткова цифра представляє чотири двійкові біти. Тому 48-бітна MAC-адреса Ethernet може бути записана за допомогою 12 шістнадцяткових цифр."/>
+                <Label TextColor="Black" FontSize="18" Text="     Протокол IPv6 був розроблений як послідовник протоколу IPv4. Адреса IPv6 має великий 128-бітний адресний простір, що забезпечує 340 ундецильйонів (тобто 340, а потім 36 нулів) можливих адрес. Однак IPv6 - це більше, ніж просто велика кількість адрес."/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Інструменти для сумісного використання IPv4 та IPv6:"/>
+                <Label TextColor="Black" FontSize="18" Text="1) Подвійний стек дозволяє IPv4 та IPv6 співіснувати в одному сегменті мережі. Пристрої подвійного стека одночасно працюють з протокольними стеками як IPv4, так і IPv6."/>
+                <Label TextColor="Black" FontSize="18" Text="2) Тунелювання — це метод передавання пакета IPv6 через мережу IPv4. Пакет IPv6 інкапсульований всередині пакета IPv4, аналогічно іншим типам даних."/>
+                <Label TextColor="Black" FontSize="18" Text="3) Перетворення мережних адрес 64 (NAT64) дозволяє пристроям з підтримкою IPv6 взаємодіяти із пристроями з підтримкою IPv4 за допомогою методу перетворення, аналогічного NAT для IPv4. Пакет IPv6 перетворюється в пакет IPv4, а пакет IPv4 - у пакет IPv6."/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Адреси IPv6 мають довжину 128 бітів і записуються у вигляді рядка шістнадцяткових значень. Кожні чотири біти представлено однією шістнадцятковою цифрою; загалом 32 шістнадцяткових значень, як показано на рисунку. IPv6-адреси не чутливі до регістру і можуть бути записані як в нижньому регістрі, так і у верхньому."/>
+                <Label TextColor="Black" FontSize="18" Text="     Основний формат для запису IPv6-адреси -  x: x: x: x: x: x: x: x, при цьому кожен x складається з чотирьох шістнадцяткових значень. Термін октет відноситься до восьми бітів IPv4-адреси. Для IPv6 гекстет (hextet) - неофіційний термін, який використовують для позначення сегмента з 16 бітів або чотирьох шістнадцяткових значень. Кожен х - це один гекстет, 16 бітів або чотири шістнадцяткові цифри."/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Існує три широкі категорії IPv6-адрес:"/>
+                <Label TextColor="Black" FontSize="18" Text="     Індивідуальна (unicast) - однозначно ідентифікує інтерфейс на пристрої з підтримкою IPv6."/>
+                <Label TextColor="Black" FontSize="18" Text="     Групова (multicast) - використовується для надсилання одного пакета IPv6 на декілька адрес призначення."/>
+                <Label TextColor="Black" FontSize="18" Text="     Альтернативна (anycast) - будь-яка індивідуальна адреса IPv6, яку можна призначати декільком пристроям. Пакет, надісланий на альтернативну адресу, перенаправляється до найближчого пристрою, який має цю адресу."/>
+                <Label TextColor="Black" FontSize="18" Text="     Довжина префікса може бути в діапазоні від 0 до 128. Рекомендована довжина префікса IPv6 для локальних мереж та більшості інших типів мереж - /64."/>
+                <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+                    <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

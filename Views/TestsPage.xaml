@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.TestsPage">
+    <StackLayout BackgroundColor="White">
+        <Label Text="Тестування"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="Black"/>
+        <ListView x:Name="testsViev"
+                  ItemsSource="{Binding testsList}"
+                  HasUnevenRows="True"
+                  SeparatorColor="Black">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label TextColor="Black" 
+                                       Text="{Binding Name}"
+                                       VerticalOptions="Center"
+                                       Margin="20"
+                                       FontSize="18"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+            <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+            <Button x:Name="OpenButton"
+                    Text="Старт"
+                    FontSize="30"
+                    Clicked="OpenButton_Clicked"
+                    BackgroundColor="White"
+                    CornerRadius="30"
+                    TextColor="Black"
+                    HeightRequest="100"
+                    WidthRequest="150"
+                    BorderColor="Black"
+                    BorderWidth="5"
+                    Margin="10"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

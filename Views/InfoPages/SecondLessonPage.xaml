@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesctopKSMClient.Views.InfoPages.SecondLessonPage">
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" Text="Комутація/Маршрутизація" FontSize="25"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Label TextColor="Black" FontSize="18" Text="     Комутація – з'єднання кінцевих вузлів через мережу транзитних вузлів.Послідовність вузлів, що знаходяться на шляху від відправника до отримувача, утворюють маршрут."/>
+                <Label TextColor="Black" FontSize="18" Text="     Задачі комутації:"/>
+                <Label TextColor="Black" Text=" - визначення інформаційних потоків, для яких потрібно прокладати маршрут;" FontSize="18"/>
+                <Label TextColor="Black" Text=" - маршрутизація потоків;" FontSize="18"/>
+                <Label TextColor="Black" Text=" - розпізнання потоків і їх локальна комутація на кожному транзитному вузлі;" FontSize="18"/>
+                <Label TextColor="Black" Text=" - мультиплексування та демультиплексування даних.;" FontSize="18"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Інформаційним потоком (потоком даних) називають неперервну послідовність даних, об'єднаних набором загальних ознак, що виділяють їх із загального мережевого трафіка."/>
+                <Label TextColor="Black" FontSize="18" Text="     Мітка потоку  - особливий тип ознаки, що представляє собою деяке число, яке несуть в собі всі дані потоку.Глобальна мітка призначається даним потоку і не змінює свого значення протягом всього шляху слідування від джерела до отримувача."/>
+                <Label TextColor="Black" FontSize="18" Text="     Мультиплексування – об'єднання декількох цифрових потоків в один."/>
+                <Label TextColor="Black" FontSize="18" Text="     Демультиплексування  -  виділення конкретного потоку даних із загального потоку."/>
+                <Label TextColor="Black" FontSize="18" Text="     Задачі маршрутизації:"/>
+                <Label TextColor="Black" Text=" - визначення маршрута;" FontSize="18"/>
+                <Label TextColor="Black" Text=" - сповіщення мережі про вибраний маршрут." FontSize="18"/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Визначити маршрут означає вибрати послідовність транзитних вузлів та інтерфейсів, через які потрібно передавати дані, щоб доставити їх адресату."/>
+
+                <Label TextColor="Black" FontSize="18" Text="     Вибір зупиняють на оптимальному маршруті."/>
+                <Label TextColor="Black" FontSize="18" Text=" - Критерії оптимальності:"/>
+                <Label TextColor="Black" FontSize="18" Text=" - Номінальна пропускна здатність;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - Завантаженість каналів зв'язку;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - Затримки, що вносяться в каналі;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - Число проміжних транзитних вузлів;"/>
+                <Label TextColor="Black" FontSize="18" Text=" - Надійність каналів і транзитних вузлів."/>
+                <StackLayout VerticalOptions="EndAndExpand"
+                     BackgroundColor="white"
+                     Orientation="Horizontal">
+                    <Button BackgroundColor="white"
+                    ImageSource="BackIcon.png"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
+                    Margin="10"
+                    x:Name="backButton"
+                    Clicked="backButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
